@@ -13,7 +13,7 @@ class Author
   end
 
   def posts
-    Post.all.select {|post| post.artist == self}
+    Post.all.select {|post| post.author == self}
   end
 
 
